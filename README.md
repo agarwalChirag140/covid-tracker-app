@@ -1,5 +1,5 @@
 # Covid Tracker App
-### Covid Tracker Application is tracker application of covid where we know the Coronavirus Cases, Recovered , Deaths through number and also on the map through the circle. In the map, if the circle is larger, that's mean the number of Coronavirus Cases, Recovered and Deaths are high and if the circle is smaller, so the number of Coronavirus Cases, Recovered and Deaths are low.
+### Covid Tracker Application is tracker application of covid where we know the Coronavirus Cases, Recovered , Deaths through number and also on the map through the circle.
 
 # Demo Video
 ### https://user-images.githubusercontent.com/61875139/119463067-021e1200-bd5f-11eb-89f3-a4a434042e82.mp4
