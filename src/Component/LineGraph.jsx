@@ -20,13 +20,13 @@ const buildChartData = (data, casesType) => {
 };
   
 
-export const LineGraph = ({casesType}) => {
+export const LineGraph = ({casesType, country}) => {
     const [data, setData] = React.useState({})
 
     React.useEffect(() => {
         axios({
             method: "get",
-            url: "https://disease.sh/v3/covid-19/historical/all?lastdays=10"
+            url: `https://disease.sh/v3/covid-19/historical/all?lastdays=11`
         })
         .then((res) => {
             let chartData = buildChartData(res.data, casesType);

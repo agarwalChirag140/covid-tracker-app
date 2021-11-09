@@ -50,6 +50,8 @@ function App() {
         getCountriesList()
     },[])
 
+    console.log(mapCountries)
+
     const countryChange = (event) => {
       const countryCode = event.target.value;
       setCountry(countryCode)
@@ -99,7 +101,7 @@ function App() {
                 <Mapnew casesType={casesType} countries={mapCountries} center={mapCenter} zoom={mapZoom} />
                 {/* <Map casesType={casesType} countries={mapCountries} center={mapCenter} zoom={mapZoom} /> */}
             </div>
-            <LeftComponent casesType={casesType} />
+            <LeftComponent casesType={casesType} country={country} />
          </div>
     </div>
   );

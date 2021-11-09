@@ -4,7 +4,7 @@ import { sortData } from '../utils'
 import { LineGraph } from './LineGraph'
 import numeral from "numeral"
 
-export const LeftComponent = ({casesType}) => {
+export const LeftComponent = ({casesType, country}) => {
 
     const [countriesCases, setCountriesCases] = React.useState([])
 
@@ -52,7 +52,7 @@ export const LeftComponent = ({casesType}) => {
                 </table>
             </div>
             <p className="text-2xl p-2 font-bold">WorldWide new {casesType}</p>
-            <LineGraph casesType={casesType} />
+            <LineGraph casesType={casesType} country={country} />
         </div>
     )
 }
